@@ -16,7 +16,7 @@ nav{
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  background-color: blue;
+  background-color: rgb(224, 183, 112);
 }
 
 /* IMG */
@@ -24,7 +24,6 @@ nav{
   padding: 3px 20px 3px 0px;
   height: 50px;
 }
-
 
 /* LES REDIRECTION */
 nav div{
@@ -41,9 +40,10 @@ nav p{
   font-size: 20px;
 }
 
-/* TEXT */
+/* LINKS */
 nav a{
-  /* height: 15px; */
+  color: black;
+  text-decoration: none;
   padding: 0 10px 0 10px;
   font-size: 15px;
 }
