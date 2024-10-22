@@ -10,9 +10,31 @@ body{
   margin: 0px;
 }
 
+/* ALL ECRITURES */
+
+article{
+  font-size: 13px;
+}
+
+.h2White{
+  margin-bottom: 0px;
+}
+
+/* white */
+.whiteEcriture{
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+
+
+/* dark */
+.darkEcriture{
+  color: #000;
+}
+
 /* NAV BARRE */
 nav{
-  
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -52,12 +74,41 @@ nav a{
 
 /* CAROUSEL */
 #carousel_div{
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
-#first{
+#carousel_div :first-child {
+  /* display: none; */
   width: 100%;
 }
+
+#carousel_div :nth-child(2){
+  display: none;
+  width: 100%;
+}
+
+#carousel_div :nth-child(3){
+  display: none;
+  width: 100%;
+}
+
+#carousel_div :nth-child(4){
+  display: none;
+  width: 100%;
+}
+
+/* BROWN SECTION */
+.divBrownArticle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
 
 /*
 @font-face {
@@ -110,11 +161,16 @@ Jaune : #ffc107
 /* STYLES DES SECTIONS  */
 
 .dark {
-    /* Image de fond : zelda-bg_pattern_brown.png */
+  /* Image de fond : zelda-bg_pattern_brown.png */
+  background-image: url("../img/zelda-bg_pattern_brown.png");
+  padding: 40px;
+
 }
 
 .light {
-    /* Image de fond : zelda-bg_pattern_white.png */
+  /* Image de fond : zelda-bg_pattern_white.png */
+  background-image: url("../img/zelda-bg_pattern_white.png");
+  padding: 40px;
 }
 
 
