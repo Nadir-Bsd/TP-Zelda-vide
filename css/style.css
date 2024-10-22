@@ -12,11 +12,12 @@ body{
 
 /* NAV BARRE */
 nav{
+  
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  background-color: rgb(224, 183, 112);
+  background-color: #AF966D;
 }
 
 /* IMG */
@@ -47,6 +48,9 @@ nav a{
   padding: 0 10px 0 10px;
   font-size: 15px;
 }
+
+
+/*  */
 
 
 /*
