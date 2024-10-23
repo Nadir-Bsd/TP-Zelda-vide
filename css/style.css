@@ -12,26 +12,40 @@ body{
 
 /* ALL ECRITURES */
 
+/* div article */
+.divArticle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* paragraphe */
 article{
   font-size: 13px;
 }
 
+/* titre article */
 .h2White{
   margin-bottom: 0px;
 }
 
-/* white */
+/* white ecriture*/
 .whiteEcriture{
   color: white;
   width: 80%;
   text-align: center;
 }
 
-
-/* dark */
+/* dark ecriture*/
 .darkEcriture{
   color: #000;
+  text-align: center;
 }
+
+
+
 
 /* NAV BARRE */
 nav{
@@ -42,13 +56,15 @@ nav{
   background-color: #AF966D;
 }
 
-/* IMG */
+/* NAV LOGO */
 #logo_navbar{
   padding: 3px 20px 3px 10px;
   height: 50px;
 }
 
-/* LES REDIRECTION */
+/* NAV A */
+
+/* div */
 nav div{
   display: flex;
   justify-content: center;
@@ -58,18 +74,20 @@ nav div{
 
 }
 
+/* ecriture */
 nav p{
   padding: 0 20px 0 20px;
   font-size: 20px;
 }
 
-/* LINKS */
+/* links */
 nav a{
   color: black;
   text-decoration: none;
   padding: 0 10px 0 10px;
   font-size: 15px;
 }
+
 
 
 /* CAROUSEL */
@@ -107,6 +125,7 @@ nav a{
   align-items: center;
   width: 100%;
 }
+
 
 
 
@@ -162,6 +181,11 @@ Jaune : #ffc107
 
 .dark {
   /* Image de fond : zelda-bg_pattern_brown.png */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-image: url("../img/zelda-bg_pattern_brown.png");
   padding: 40px;
 
@@ -169,6 +193,11 @@ Jaune : #ffc107
 
 .light {
   /* Image de fond : zelda-bg_pattern_white.png */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-image: url("../img/zelda-bg_pattern_white.png");
   padding: 40px;
 }
