@@ -19,6 +19,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.container{
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
 
 
 /* ALL ECRITURES */
@@ -247,7 +253,7 @@ Jaune : #ffc107
   width: 100%;
   background-image: url("../img/zelda-bg_pattern_white.png");
   padding: 70px;
-}
+} 
 
 
 
@@ -288,32 +294,83 @@ footer{
 /* GRID CSS */
 
 .wrapper {
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    grid-auto-rows: minmax(100px, 100%);
+    height: 1000px;
+    margin-bottom: 20px;
 }
   
 .bloc-a {
-    
+  background-image: url(../img/zelda-grid-a.jpg);
+  grid-column: 1;
+  grid-row: 1 / 3;
 }
   
 .bloc-b {
-
+  background-image: url(../img/zelda-grid-b.png);
+  grid-column: 2 / 4;
+  grid-row: 1;
 }
-  
-.bloc-d {
 
-}
-  
 .bloc-c {
+  background-image: url(../img/zelda-grid-c.png);
+  grid-column: 2;
+  grid-row: 2;
+}
 
+.bloc-d {
+  background-image: url(../img/zelda-grid-d.jpg);
+  grid-column: 3;
+  grid-row: 2;
+}
+  
+.bloc-e {
+  background-image: url(../img/zelda-grid-e.png);
+  grid-column: 1;
+  grid-row: 3;
 }
 
 .bloc-f {
-    
+  background-image: url(../img/zelda-grid-f.png);
+  grid-column: 2 / 4;
+  grid-row: 3;
 }
 
-.bloc-e {
-    
+.test{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
+
+.containerWhite{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  h2{
+    margin-bottom: 10px;
+  }
+
+  p{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .button{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    width: 100%;
+    button{
+      border: none;
+      padding: 15px 25px;
+      background-color: #AF966D;
+      font-size: x-large;
+    }
+  }
+
+}
+
   
 
 
