@@ -124,7 +124,9 @@ header{
 }
 
 
-
+.burgerMenu{
+  display: none;
+}
 
 
 
@@ -167,7 +169,6 @@ header{
 .horizontalDiv img{
   padding: 50px 50px 0px 50px;
   width: 100%;
-
 }
 
 #zeldaRun{
@@ -180,6 +181,12 @@ header{
   display: flex;
   gap: 5px;
   margin-top: 30px;
+
+  div{
+    img{
+      padding: 0px;
+    }
+  }
 }
 
 
@@ -241,7 +248,7 @@ Jaune : #ffc107
   align-items: center;
   width: 100%;
   background-image: url("../img/zelda-bg_pattern_brown.png");
-  padding: 70px;
+  padding: 5%;
 }
 
 .light {
@@ -252,7 +259,7 @@ Jaune : #ffc107
   align-items: center;
   width: 100%;
   background-image: url("../img/zelda-bg_pattern_white.png");
-  padding: 70px;
+  padding: 5%;
 } 
 
 
@@ -297,8 +304,8 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3px;
-    grid-auto-rows: minmax(100px, 100%);
-    height: 1000px;
+    grid-auto-rows: minmax(100px, 350px);
+    height: 80%;
     margin-bottom: 20px;
 }
   
@@ -345,10 +352,11 @@ footer{
 
 .containerWhite{
   display: flex;
-  width: 80%;
+  width: 100%;
   flex-direction: column;
   h2{
     margin-bottom: 10px;
+    text-align: center;
   }
 
   p{
@@ -430,13 +438,79 @@ width: 24px;
 height: 8px;
 top: 50%;
 -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
+transform: translateY(-50%);
 }
 .hl-arrow:before {
 left: -24px;
 }
 .hl-arrow:after {
 -webkit-transform: translateY(-50%) scaleX(-1);
-        transform: translateY(-50%) scaleX(-1);
+transform: translateY(-50%) scaleX(-1);
 right: -24px;
+}
+
+
+
+
+
+
+@media (max-width: 1000px){
+  .cheval{
+    flex-direction: column;
+  }
+
+  .wrapper{
+    grid-auto-rows: minmax(100px, 190px);
+  }
+
+  .horizontalDiv img{
+    padding: 0px;
+  }
+}
+
+
+
+@media (max-width: 980px){
+  #containerDiv{
+    flex-wrap: wrap;
+    gap: 50px;
+    text-align: center;
+    width: 70%;
+  }
+}
+
+
+
+
+@media (max-width: 573px){
+
+  .burgerMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    
+    hr{
+      background-color: #000;
+      border: none;
+      width: 30px;
+      height: 1px;
+      margin: 0px;
+    }
+  }
+
+  .wrapper{
+    grid-auto-rows: minmax(100px, 120px);
+  }
+
+  nav{
+    justify-content: space-around;
+    p{
+      display: none;
+    }
+    .listA{
+      display: none;
+    }
+  }
+
 }
